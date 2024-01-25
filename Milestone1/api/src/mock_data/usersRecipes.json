@@ -1,0 +1,154 @@
+{
+    "users": [
+      {
+        "username": "Alice",
+        "numberoffolders": "2",
+        "recipefolders": [
+          {
+            "foldername": "Dinner",
+            "numberofrecipes": "2",
+            "recipes": [
+              {
+                "id": 1,
+                "recipename": "Spaghetti Bolognese",
+                "instructions": "Classic Italian dish with meat sauce",
+                "dietaryrestrictions": "none",
+                "numberofingredients": "6",
+                "ingredients": [
+                  {
+                    "name": "Spaghetti",
+                    "quantity": "1 pound"
+                  },
+                  {
+                    "name": "Ground beef",
+                    "quantity": "1 pound"
+                  },
+                  {
+                    "name": "Tomato sauce",
+                    "quantity": "28 ounces"
+                  },
+                  {
+                    "name": "Garlic",
+                    "quantity": "2 cloves"
+                  },
+                  {
+                    "name": "Onion",
+                    "quantity": "1 medium"
+                  },
+                  {
+                    "name": "Olive oil",
+                    "quantity": "2 tablespoons"
+                  }
+                ]
+              },
+              {
+                "id": 2,
+                "recipename": "Roast Chicken",
+                "instructions": "Simple roast chicken recipe",
+                "numberofingredients": "5",
+                "ingredients": [
+                  {
+                    "name": "Whole chicken",
+                    "quantity": "1"
+                  },
+                  {
+                    "name": "Lemon",
+                    "quantity": "1"
+                  },
+                  {
+                    "name": "Garlic",
+                    "quantity": "4 cloves"
+                  },
+                  {
+                    "name": "Rosemary",
+                    "quantity": "2 sprigs"
+                  },
+                  {
+                    "name": "Butter",
+                    "quantity": "2 tablespoons"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "foldername": "Dessert",
+            "numberofrecipes": "1",
+            "recipes": [
+              {
+                "id": 3,
+                "recipename": "Chocolate Cake",
+                "instructions": "chocolate cake recipe",
+                "numberofingredients": "6",
+                "ingredients": [
+                  {
+                    "name": "Flour",
+                    "quantity": "2 cups"
+                  },
+                  {
+                    "name": "Sugar",
+                    "quantity": "2 cups"
+                  },
+                  {
+                    "name": "Cocoa powder",
+                    "quantity": "3/4 cup"
+                  },
+                  {
+                    "name": "Baking powder",
+                    "quantity": "2 teaspoons"
+                  },
+                  {
+                    "name": "Eggs",
+                    "quantity": "4"
+                  },
+                  {
+                    "name": "Butter",
+                    "quantity": "1 cup"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "username": "Bob",
+        "numberoffolders": "1",
+        "recipefolders": [
+          {
+            "id": 3,
+            "foldername": "Breakfast",
+            "numberofrecipes": "1",
+            "recipes": [
+              {
+                "id": 4,
+                "recipe": "Scrambled Eggs",
+                "instructions": "Crack egg, eat raw",
+                "numberofingredients": "4",
+                "ingredients": [
+                  {
+                    "name": "Eggs",
+                    "quantity": "2"
+                  },
+                  {
+                    "name": "Butter",
+                    "quantity": "1 tablespoon"
+                  },
+                  {
+                    "name": "Milk",
+                    "quantity": "2 tablespoons"
+                  },
+                  {
+                    "name": "Salt",
+                    "quantity": "1/4 teaspoon"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

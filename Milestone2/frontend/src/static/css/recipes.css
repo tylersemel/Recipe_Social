@@ -1,0 +1,159 @@
+@media only screen and (min-width: 992px) {
+
+  .sidebar {
+      height: 100%; /* Full-height: remove this if you want "auto" height */
+      width: 200px; /* Set the width of the sidebar */
+      position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+      top: 0; /* Stay at the top */
+      left: 0;
+      background-color: #111; /* Black */
+      overflow-x: hidden; /* Disable horizontal scroll */
+      padding-top: 200px;
+      padding-bottom: 200px;
+      display: flex;
+      flex-direction: column;
+      float:left;
+    }
+    
+    /* The navigation menu links */
+    .sidebar a {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #818181;
+      display: block;
+    }
+    
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+    
+    main {
+      margin-left: 200px;
+    }
+    
+    .searchbar{
+     position:relative;
+     left:100px;
+     width:0px;
+    
+    }
+    
+    #recipebox{
+      border-style:solid;
+      border-radius:5px;
+      border-color: lightgrey;
+      margin-left:100px;
+      margin-right:100px;
+      margin-top:10px;
+      position:relative;
+      height:800px;
+      overflow:auto;
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+    #recipe {
+      text-decoration: none;
+    }
+    
+    #recipe-holder {
+      padding: 5px 5px 5px 5px;
+      margin-left:50px;
+    }
+    
+    #recipe:hover {
+      box-shadow: 3px 3px 10px 0px #000000;
+      color: black;
+    }
+    
+    #recipe p {
+      margin: 0;
+    }
+    #recipe-image {
+      height: 250px;
+      width: 250px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+  .sidebar {
+      height: 100px; /* Full-height: remove this if you want "auto" height */
+      width: 100%; /* Set the width of the sidebar */
+      position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+      bottom: 0; /* Stay at the top */
+      left: 0;
+      background-color: #111;/* Black */
+      overflow-y: hidden; /* Disable horizontal scroll */
+      /*padding-top: 200px;
+      padding-bottom: 200px; */
+  
+      text-align:center;
+      z-index: 9999;
+
+    }
+    
+    /* The navigation menu links */
+    .sidebar a {
+      text-decoration: none;
+      font-size: 20px;
+      color: #818181;
+      display: inline-block;
+      width:24%;
+      padding-top:35px;
+
+    }
+    
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+    
+    main {
+      margin-bottom:150px;
+
+    }
+    
+    .searchbar{
+     position:relative;
+     left:100px;
+     width:0px;
+    
+    }
+    
+    #recipebox{
+      border-style:solid;
+      border-radius:5px;
+      border-color: lightgrey;
+      margin-left:100px;
+      margin-right:100px;
+      margin-top:10px;
+      position:relative;
+      height:650px;
+      overflow:auto;
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr; /*removed 1fr */
+
+    }
+    
+    #recipe {
+      text-decoration: none;
+    }
+    
+    #recipe-holder {
+      padding: 5px 5px 5px 5px;
+      margin-left:50px;
+    }
+    
+    #recipe:hover {
+      box-shadow: 3px 3px 10px 0px #000000;
+      color: black;
+    }
+    
+    #recipe p {
+      margin: 0;
+    }
+    #recipe-image {
+      height: 250px;
+      width: 250px;
+    }
+}

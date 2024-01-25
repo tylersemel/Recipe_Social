@@ -1,0 +1,148 @@
+/** @author: Tyler Semel (tlsemel */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Lucida Console", sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+html {
+    margin: 0;
+    padding: relative;
+    height: 100%
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+    background-color:#fffafa;
+}
+
+.sidebar {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 200px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 200px;
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    float:left;
+  }
+  
+  /* The navigation menu links */
+  .sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+  }
+
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+
+header {
+    margin-top: 20px;
+    font-size: 24px;
+    grid-row: 1;
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-recipe-form-container {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color:#fffafa;
+    border: 3px solid black;
+}
+
+.create-recipe-form {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr 1fr 1fr 1fr;
+    gap: 1px;
+    justify-content: center;
+    align-items: center;
+}
+
+.labels-name {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+}
+
+.recipe-name {
+    width: 27em;   
+}
+
+.time {
+    width: 13.5em;   
+}
+
+.labels-time {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.labels-tags {
+    grid-row: 3 / 4;
+    grid-column: 2/3;
+}
+
+.current-tags {
+    height: 6em;
+    width: 17.5em;      
+}
+
+img {
+    width: 110px;
+    height: 110px;    
+}
+
+.labels-image {
+    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+}
+
+.labels-ingredients {
+    grid-row: 4 / 5;
+    grid-column: 1/ 3;
+}
+
+.ingredients {
+    height: 6em;
+    width: 35em;     
+}
+
+.labels-instructions {
+    grid-row: 5 / 6;
+    grid-column: 1/ 3;
+}
+
+.instructions {
+    height: 6em;
+    width: 35em;   
+}
+
+.create-recipe-submit {
+    grid-row: 6 / 7;
+    grid-column: 1 / 3;
+    padding: 20px;
+}

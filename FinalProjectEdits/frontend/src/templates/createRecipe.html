@@ -1,0 +1,111 @@
+<!-- @author: Tyler Semel (tlsemel)-->
+<!-- This Create Recipe page allows a user to create a recipe which is
+then saved to the user's created recipes folder-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="/js/createRecipe.js" type="module"></script>
+    <script src="/js/common.js" type="module"></script>
+    <title>Create Recipe</title>
+    <link rel="stylesheet" href="css/createRecipe.css">
+</head>
+<body>
+    <div id="content">
+        <div class="bottom-sidebar-flex-column">
+            <div>
+                <button class="side-button account-button"> Your Account </button>
+            </div>
+            <div>
+                <button class="side-button create-button"> Create Recipe </button>
+            </div>
+            <div>
+                <button class="side-button search-button">Search Recipes</button>
+            </div>
+            <div>
+                <button class="side-button saved-button">Saved Recipes</button>
+            </div>
+            <div>
+                <button class="side-button logout-button">Logout</button>
+            </div>
+        </div>
+        <h1 class="header">Create Recipe</h1>
+        <div class="container-create-recipe-form">
+            <form class="create-recipe-form" method="post" action="api/v1/recipes" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="labels-name col-sm-9">
+                        <label for="recipe_name">Recipe Name:</label>
+                        <input type="text" name="recipe_name" class="recipe-name" required="true">
+                    </div>
+                    <div class="labels-public col-sm-3">
+                        <label for="recipe_public">Make Public?:</label>
+                        <input class="'form-check'" name="recipe_public" value="1" type="checkbox">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="labels-img col-sm-6">
+                        <label for="recipe_image">Image(Optional):</label>
+                        <br>
+                        <img id="preview">
+                        <br>
+                        <input type="file" class="recipe-image" name="recipe_image" accept="image/*" onchange="previewImage(event)">
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="labels-time">
+                            <label for="time">Time:</label>
+                            <input type="text" name="recipe_time" class="time" required="true">
+                        </div>
+                        <div class="labels-tags">
+                            <label for="select-tags">Select Tags:</label>
+                            <div class="tagList">
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="labels-description col-sm-12">
+                    <label for="recipe_description">Description:</label>
+                    <br>
+                    <textarea class="description form-control" name="recipe_description" required="true"></textarea>
+                </div>
+                
+                <div class="labels-ingredients col-sm-12">
+                    <label for="ingredients">Ingredients:</label>
+                    <br>
+                    <button type="button" class="btn btn-secondary" id="addIngredient">New Ingredient</button>
+                    <div class="ingredients">
+                        <input class="placeholder" type="text" name="ingredient_name">
+                        <input class="placeholder" type="number" name="ingredient_amount">
+                        <input class="placeholder" type="text" name="ingredient_measurement">
+                    </div>
+                </div>
+                <div class="labels-instruction col-sm-12">
+                    <label for="instruction">Instructions:</label>
+                    <br>
+                    <textarea class="instructions form-control" name="recipe_instruction" required="true"></textarea>
+                </div>
+                <input type="submit" class="create-recipe-submit" name="create-recipe-submit" value="Create Recipe">
+            </form>
+            
+        </div>
+        
+    </div>
+    <script>
+        const previewImage = e => {
+            const reader = new FileReader();
+            reader.readAsDataURL(e.target.files[0]);
+            reader.onload = () => {
+                const preview = document.querySelector('#preview');
+                preview.src = reader.result;
+            };
+        };
+    </script>
+
+</body>

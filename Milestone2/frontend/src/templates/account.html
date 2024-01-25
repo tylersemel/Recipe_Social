@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+    <link rel="stylesheet" href="/css/account.css">
+</head>
+<body>
+    <div class="sidebar">
+        <a href="/home">Home</a>
+        <a href="/savedrecipes">Saved Recipes</a>
+        <a href="/createRecipe"> Create Recipe</a>
+        <a hread="/notifications">Notifications</a>
+    </div>
+
+    <main>
+        <h1>Account</h1>
+        <a type="button" href="/settings">Settings</a>
+        <div id="account-info">
+            <img id="profile-photo" src="/img/account-image-placeholder.png">
+            <div id="account-top">
+                <h2>Username: </h2>
+                <div class="username"></div>
+                <button>Followers</button>
+                <button>Following</button>
+                <button class="edit-bio">Edit Bio</button>
+            </div>
+            <label>Bio: <br><textarea readonly></textarea></label>
+            <div class="bio"></div>
+        </div>
+        <h2>Published Recipes</h2>
+        <div id="user-recipes">
+            <div>
+                <a id="recipe" href="/recipefolders">
+                    <img id="recipe-image" src="/img/recipe-image-placeholder.webp">
+                    <p>Recipe Title</p>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="/js/account.js" type="module"></script>
+</html>

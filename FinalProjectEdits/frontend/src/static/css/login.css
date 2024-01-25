@@ -1,0 +1,98 @@
+/** @author: Tyler Semel (tlsemel */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Lucida Console", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+html {
+    margin: 0;
+    padding: relative;
+    /* height: 100% */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+    background-color:#fffafa;
+}
+
+header {
+    margin-top: 20px;
+    font-size: 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form-container {
+    margin-top: 110px;
+    margin-bottom: 10px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fffafa;
+    border-radius: 5px;   
+    border: 3px solid black;
+    padding: 20px;
+}
+
+.login-form .labels {
+    padding: 10px;
+}
+
+.login-submit {
+    grid-row: 5;
+}
+
+.login-submit {
+    align-items: center;
+    background-color: black;
+    border: 1% solid black;
+    border-radius: 1%;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    height: 20%;
+    line-height: 1;
+    font-size: 114%;
+}
+
+.login-submit{
+    transition:.75s;
+    border-style:none;
+    line-height:1.5;
+}
+
+.login-submit:hover{
+    background-color:#4f4f4a;
+    transition:.75s;
+}
+
+#errorbox {
+    background-color: #debaba;
+    border: 1% solid #db7d7d;
+    border-radius: 1%;
+    padding: 2%;
+    text-align: center;
+    margin-bottom: 20%;
+  }
+  
+  #errorbox.hidden {
+    visibility: hidden;
+  }

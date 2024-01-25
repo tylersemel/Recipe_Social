@@ -1,0 +1,67 @@
+/** @author: Tyler Semel (tlsemel */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Lucida Console", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+html {
+    margin: 0;
+    padding: relative;
+    /* height: 100% */
+}
+
+body {
+    margin: 0;
+    /* padding: 0; */
+    max-width: 100vw;
+    max-height: 100vh;
+    background-color:#fffafa;
+}
+
+header {
+    margin-top: 20px;
+    font-size: 5vw;
+    font-weight: bold;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div { 
+    padding: 10px;
+}
+
+
+/* CSS */
+button {
+    font-size: 10vw;
+    align-items: center;
+    background-color: #fffafa;
+    border: 0.4vw solid black;
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    justify-content: center;
+    line-height: 1;
+    padding: 1vw;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: left;
+    font-size: 3vw;
+}
+

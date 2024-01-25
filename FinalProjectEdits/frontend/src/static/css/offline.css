@@ -1,0 +1,40 @@
+
+
+
+
+
+body{
+    background-color:rgb(223, 221, 221);
+    display:flex;
+    align-items:center;
+    height:100vh;
+}
+.yol{
+    text-align:center;
+    font-family: "Lucida Console", sans-serif;
+    font-size:25px;
+    text-decoration-line:underline;
+    text-underline-offset: 25px;
+    text-decoration-color:gray;
+    padding-bottom:50px;
+    padding-top:30px;
+    
+}
+
+.info{
+    text-align:center;
+    padding-bottom:30px;
+    font-style:italic;
+    color:rgb(78, 78, 78);
+}
+
+.message{
+    background-color:white;
+    border-style:solid;
+    align-self:center;
+    width:450px;
+    min-width:250px;
+    border-radius:5px;
+    margin: 0 auto;
+    font-size:18px;
+}

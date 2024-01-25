@@ -1,0 +1,57 @@
+[
+    {
+        "username": "user1",
+        "bio": "this is a test bio",
+        "following": ["user2", "user3", "user4"],
+        "recipes": [
+            {
+                "name": "Lasagna",
+                "image-location": "img/lasagna.jpg"
+            },
+            {
+                "name": "Steak",
+                "image-location": "img/ref.jpg"
+            },
+            {
+                "name": "Macaroni",
+                "image-location": "img/ref.jpg"
+            },
+            {
+                "name": "Kelp",
+                "image-location": "img/ref.jpg"
+            }
+        ]
+    },
+    {
+        "username": "user2",
+        "bio": "this is a test bio #2",
+        "following": ["user3", "user4"],
+        "recipes": [
+            {
+                "name": "Lasagna",
+                "image-location": "img/lasagna.jpg"
+            },
+            {
+                "name": "Steak",
+                "image-location": "img/ref.jpg"
+            }
+        ]
+    },
+    {
+        "username": "user3",
+        "bio": "this is a test bio #3",
+        "following": ["user2", "user4"],
+        "recipes": [
+            {
+                "name": "Lasagna",
+                "image-location": "img/lasagna.jpg"
+            }
+        ]
+    },
+    {
+        "username": "use4",
+        "bio": "",
+        "following": [],
+        "recipes": []
+    }
+]

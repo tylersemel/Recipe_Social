@@ -1,0 +1,123 @@
+body{
+  background-color:#f1f1f1;
+}
+.sidebar {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 200px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 200px;
+  padding-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  float:left;
+}
+
+/* The navigation menu links */
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+main {
+  margin-left: 200px;
+}
+
+.recipename{
+  text-align:center;
+  border-bottom:2px solid lightgray;
+  margin-left:100px;
+  margin-right:100px;
+}
+
+.recipeDetails{
+  display:grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap:10px;
+  grid-auto-rows: 100px;
+  grid-template-areas: 
+      "a a a a b b"
+      "a a a a c c"
+      "a a a a c c"
+      "d d d d d d"
+      "d d d d d d";
+  align-items: start;
+  font-size:20px;
+}
+
+.ingredients{
+  grid-area: a;
+  padding:25px;
+  border-style:solid;
+  border-color:lightgray;
+  margin-top:15px;
+  margin-left:100px;
+  margin-right:25px;
+  height:250px;
+  background-color:white;
+  border-width:2px;
+  overflow:auto;
+
+}
+
+.time{
+  grid-area: b;
+  padding:25px;
+  height:45px;
+  border-style:solid;
+  border-color:lightgray;
+  margin-top:15px;
+  margin-right:100px;
+  background-color:white;
+  border-width:2px;
+}
+
+.dietaryrestrictions{
+  grid-area: c;
+  padding-top:25px;
+  padding-left:25px;
+  height:165px;
+  border-style:solid;
+  border-color:lightgray;
+  margin-top:15px;
+  margin-right:100px;
+  background-color:white;
+  border-width:2px;
+  overflow:auto;
+}
+
+.instructions{
+  grid-area: d;
+  border-style:solid;
+  border-color:lightgray;
+  margin-left:100px;
+  margin-right:100px;
+  height:475px;
+  padding:25px;
+  background-color:white;
+  border-width:2px;
+  overflow:auto;
+}
+
+ul li {
+  list-style: none;
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+ul li::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 0;
+}

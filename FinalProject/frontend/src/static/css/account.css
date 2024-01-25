@@ -1,0 +1,95 @@
+.sidebar {
+    height: 100%; 
+    width: 200px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    float:left;
+  }
+  
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+  }
+
+.sidebar a:hover {
+    color: #f1f1f1;
+  }
+
+main {
+    margin-left: 200px;
+  }
+
+#account-info {
+    border: 3px solid #111;
+  }
+
+#profile-photo {
+    float:left;
+    height: 200px;
+    width: 200px;
+  }
+
+#account-top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+textarea {
+  margin-left: 3px;
+  resize: none;
+  width: 800px;
+  height: 150px;
+}
+
+#user-recipes {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px 5px;
+
+}
+
+#recipe {
+  text-decoration: none;
+}
+
+#recipe:hover {
+  /* box-shadow: 3px 3px 10px 0px #000000; */
+  color: black;
+}
+
+#recipe p {
+  margin: 0;
+}
+
+#recipe-image {
+  height: 250px;
+  width: 250px;
+}
+
+button {
+  font-size: 10vw;
+  align-items: center;
+  background-color: #fffafa;
+  border: 0.4vw solid black;
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  justify-content: center;
+  line-height: 1;
+  padding: 1vw;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: left;
+  font-size: 3vw;
+}
