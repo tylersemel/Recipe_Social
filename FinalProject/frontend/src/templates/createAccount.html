@@ -1,0 +1,48 @@
+<!-- @author: Tyler Semel (tlsemel)-->
+<!-- This page servers as a login page for the user. It will be seen once the user clicks the
+login option-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <!-- <link rel="stylesheet" href="./../../css/login.css"> -->
+    <link rel="stylesheet" href="/css/createAccount.css">
+    <script src="/js/createAccount.js" type="module"></script>
+</head>
+<body>
+    <div id="content">
+        <header>Recipe Creator</header>
+        <div class="create-user-container">
+            <!--Sending user email and password data with post-->
+            <div id="errorbox" class="hidden"></div>
+            <h2>Create Account</h2>
+            <form class="create-user-form">
+                <div class="labels">
+                    <label for="avatar">Avatar (Optional)</label>
+                    <br>
+                    <img class="sender-image">
+                    <br>
+                    <input type="file" name="avatar" class="avatar" accept="image/*">
+                </div> 
+                <div class="labels">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" class="username" required="true">
+                </div> 
+                <div class="labels">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" class="name" required="true">
+                </div>
+                <div class="labels">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" class="password" required="true">
+                </div>
+                <input type="button" class="create-account-submit" value="Create Account">
+            </form>
+            <br>
+        </div>
+        <a href="/login">Login Instead</a>
+    </div>
+</body>

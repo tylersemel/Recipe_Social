@@ -1,0 +1,12 @@
+.recipe-tags-filter {
+    background-color: green;
+    border: 1% solid green;
+    border-radius: 1%;
+    padding: 2%;
+    text-align: center;
+    margin-bottom: 20%;
+  }
+  
+.recipe-tags-filter hidden {
+    visibility: hidden;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+    <link rel="stylesheet" href="/css/editProfile.css">
+    <script src="/js/common.js" type="module"></script>
+    <script src="/js/editProfile.js" type="module"></script>
+    <!-- <script src="/js/editProfile.js" type="module"></script> -->
+</head>
+<body>
+    <div class="bottom">
+        <div>
+            <button class="account-button"> Your Account </button>
+        </div>
+        <div>
+            <button class="create-button"> Create Recipe </button>
+        </div>
+        <div>
+            <button class="search-button">Search Recipes</button>
+        </div>
+        <div>
+            <button class="saved-button">Saved Recipes</button>
+        </div>
+        <div>
+            <button class="logout-button">Logout</button>
+        </div>
+    </div>
+    <!--Where info will be populated by API-->
+    <main>
+        <div id="successbox"></div>
+        <h1>Your Profile</h1>
+        <form class="edit-profile-form">
+            <div class="profile-photo">
+                <img class="sender-image">
+                <br>
+                <input type="file" name="avatar" class="avatar" accept="image/*">
+            </div>
+            <div class="user-name">
+                <label for="name">Name</label>
+                <input type="text" name="name" class="name" value="Name">
+            </div>
+            <div class="user-bio">
+                <label for="bio">Bio</label>
+                <br>
+                <textarea class="bio" name="bio" placeholder="Tell us something about yourself..."></textarea>
+                <!-- <input type="text" name="bio" class="bio" placeholder="Tell us something about yourself..."> -->
+            </div>
+            <!-- <label for="follows">Follows</label>
+            <div class="follows"></div>
+            <label for="followers">Followers</label>
+            <div class="followers"></div> -->
+            <input type="button" value="Save Changes" class="edit-button">
+        </form>
+    </main>
+
+</body>
+</html>

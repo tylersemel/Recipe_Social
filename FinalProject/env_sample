@@ -1,0 +1,11 @@
+MYSQL_ROOT_PASSWORD=rootUserPassword
+MYSQL_DATABASE=recpcrtr
+MYSQL_USER=rcpcrtruser
+MYSQL_PASSWORD=userPassword
+
+DB_ENGINE=mysql
+DB_HOST=database # This must match the name of the database service in your docker-compose.yml file
+DB_PORT=3306
+DB_CHARSET=utf8mb4
+
+API_SECRET_KEY=Your_Secret_Here

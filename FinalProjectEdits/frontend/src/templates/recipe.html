@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="/js/recipe.js" type="module"></script>
+    <script src="/js/common.js" type="module"></script>
+    <title>Recipe</title>
+    <link rel="stylesheet" href="/css/recipe.css" >
+</head>
+<body>
+    <div id="content">
+        <div class="bottom-sidebar-flex-column">
+            <div>
+                <button class="side-button account-button"> Your Account </button>
+            </div>
+            <div>
+                <button class="side-button create-button"> Create Recipe </button>
+            </div>
+            <div>
+                <button class="side-button search-button">Search Recipes</button>
+            </div>
+            <div>
+                <button class="side-button saved-button">Saved Recipes</button>
+            </div>
+            <div>
+                <button class="side-button logout-button">Logout</button>
+            </div>
+        </div>
+        <h1 class="header"></h1>
+        <div class="container-create-recipe-form">
+
+            <form class="create-recipe-form">
+                <div class="row">
+                    <div class="labels-name col-sm-9">
+                        
+                    </div>
+                    <div class="labels-public col-sm-3">
+                        <label for="recipe_public">Public?:</label>
+                        
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="labels-img col-sm-6">
+                        <label for="recipe_image">Image(Optional):</label>
+                        <br>
+                        <img id="preview">
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="labels-time">
+                            <label for="time">Time:</label>
+                            <input class="time" type="text" name="recipe_time" class="time" disabled="true">
+                        </div>
+                        <div class="labels-tags">
+                            <label for="select-tags">Tags:</label>
+                            <div class="tagList">
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="labels-description col-sm-12">
+                    <label for="recipe_description">Description:</label>
+                    <br>
+                    <span class="description form-control" name="recipe_description" disabled="true"></span>
+                </div>
+                
+                <div class="labels-ingredients col-sm-12">
+                    <label for="ingredients">Ingredients:</label>
+                    <br>
+                    <div class="ingredients">
+                        
+                    </div>
+                </div>
+                <div class="labels-instruction col-sm-12">
+                    <label for="instruction">Instructions:</label>
+                    <br>
+                    <span class="instructions form-control" name="recipe_instruction" disabled="true"></span>
+                </div>
+            </form>
+            
+        </div>
+        
+    </div>
+
+</body>
+</html>

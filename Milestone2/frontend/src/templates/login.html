@@ -1,0 +1,39 @@
+<!-- @author: Tyler Semel (tlsemel)-->
+<!-- This page servers as a login page for the user. It will be seen once the user clicks the
+login option-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="/js/login.js" type="module"></script>
+</head>
+<body>
+    <div id="content">
+        <header>Recipe Creator</header>
+        <div class="login-form-container">
+            <!--Sending user email and password data with post-->
+            <div id="errorbox" class="hidden"></div>
+            <h2>Login</h2>
+            <form class="login-form">
+                <div class="labels">
+                    <label for="login-username">Username</label>
+                    <input type="text" name="login-username" class="login-username">
+                </div> 
+                <div class="labels">
+                    <label for="password">Password</label>
+                    <input type="password" name="login-password" class="login-password">
+                </div>
+                <input type="button" class="login-submit" value="Login">
+            </form>
+            <br>
+            <div class="account-links">
+                <a href="/createAccount">Create Account</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

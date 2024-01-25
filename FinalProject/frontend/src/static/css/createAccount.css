@@ -1,0 +1,148 @@
+/** @author: Tyler Semel (tlsemel */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Lucida Console", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+html {
+    margin: 0;
+    padding: relative;
+    /* height: 100% */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+    background-color:#fffafa;
+}
+
+header {
+    margin-top: 20px;
+    font-size: 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sender-image {
+    width: 150px;
+    height: 150px;
+}
+
+.create-user-container {
+    /* margin-top: 100px; */
+    /* margin-bottom: 10px; */
+    height: 100vh;
+}
+
+.create-user-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fffafa;
+    border-radius: 5px;   
+    border: 3px solid black;
+    padding: 20px;
+}
+
+.create-user-form .labels {
+    padding: 10px;
+}
+
+.create-account-submit {
+    grid-row: 5;
+}
+
+.navigation-buttons {
+    margin-top: 200px;
+
+}
+
+.avatar {
+    align-items: center;
+    appearance: none;
+    background-color: black;
+    border: 3px solid black;
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    height: 48px;
+    line-height: 1;
+    font-size: 18px;
+}
+
+.create-account-submit {
+    align-items: center;
+    background-color: black;
+    border: 3px solid black;
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    height: 48px;
+    line-height: 1;
+    font-size: 18px;
+}
+
+.create-account-submit{
+    transition:.75s;
+    border-style:none;
+}
+
+.create-account-submit:hover {
+    transition:.75s;
+    background-color:#4f4f4a
+}
+
+#errorbox {
+    background-color: #debaba;
+    border: 1% solid #db7d7d;
+    border-radius: 1%;
+    padding: 2%;
+    text-align: center;
+    margin-bottom: 20%;
+  }
+  
+  #errorbox.hidden {
+    visibility: hidden;
+  }
+
+
+.labels{
+    text-align:center; 
+}
+
+.avatar{
+    border-style:none;
+    border-radius:0px;
+    background-color:#fffafa;
+    color:black;
+    cursor:default; 
+}
+
+input::file-selector-button{
+    background-color:black;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+    transition:0.75s; 
+}
+
+input::file-selector-button:hover{
+    background-color:#4f4f4a;
+    transition:.75s; 
+}

@@ -1,0 +1,236 @@
+@media only screen and (min-width: 992px) {
+
+  button {
+    font-size: 1.7vw;
+    align-items: center;
+    background-color: #fffafa;
+    border: 0.3vw solid black;
+    border-radius: 1vw;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    justify-content: center;
+    line-height: 1;
+    padding: 0.4vw;
+    padding-left: 0.7vw;
+    padding-right: 0.7vw;
+  }
+
+  .bottom {
+    /* position: fixed; */
+    /* height: 100%;  */
+    /* width: 55%;  */
+    top: 0;
+    left: 0;
+    height: 90vh;
+    /* overflow-x: hidden; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: stretch; */
+    float:left;
+    padding: 2%;
+   
+    
+  }
+
+  .bottom > div {
+    /* padding-top: 55%; */
+    /*padding-block: 20%;*/
+    margin-bottom:25%;
+    margin:19%;
+  }
+
+  .bottom > div > button{
+    transition:.75s;
+
+}
+
+.bottom > div > button:hover{
+    transition:.75s;
+    background-color:rgb(177, 177, 177);
+}
+
+    
+    main {
+      margin-left: 200px;
+    }
+    
+    .searchbar{
+     position:relative;
+     left:100px;
+     width:0px;
+    
+    }
+    
+    #recipebox{
+      border-style:solid;
+      border-radius:5px;
+      border-color: lightgrey;
+      margin-left:100px;
+      margin-right:100px;
+      margin-top:10px;
+      position:relative;
+      height:800px;
+      overflow:auto;
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+    @media only screen and (max-width: 1600px) {
+    
+      #recipebox{
+        grid-template-columns: 1fr 1fr 1fr; /*removed 1fr */
+  
+      }
+
+    }
+
+    @media only screen and (max-width: 1300px) {
+    
+      #recipebox{
+        grid-template-columns: 1fr 1fr; /*removed 1fr */
+  
+      }
+
+    }
+
+    #recipe {
+      text-decoration: none;
+    }
+    
+    #recipe-holder {
+      padding: 5px 5px 5px 5px;
+      margin-left:50px;
+    }
+    
+    #recipe:hover {
+      box-shadow: 3px 3px 10px 0px #000000;
+      color: black;
+    }
+    
+    #recipe p {
+      margin: 0;
+    }
+    #recipe-image {
+      height: 250px;
+      width: 250px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+  button {
+    font-size: 1.7vw;
+    align-items: center;
+    background-color: #fffafa;
+    border: 0.3vw solid black;
+    border-radius: 1vw;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    justify-content: center;
+    line-height: 1;
+    padding:10px;
+    
+  }
+    
+  .bottom {
+    height: 100px; /* Full-height: remove this if you want "auto" height */
+    width: 100%; /* Set the width of the sidebar */
+    /* overflow-x: hidden; */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    bottom: 0; /* Stay at the top */
+    left: 0;
+    text-align:center;
+   
+    
+  }
+  
+  .bottom > div {
+    /* padding-top: 55%; */
+    /*padding-block: 20%;*/
+    
+    display: inline-block;
+    width:19%;
+    font-size:15px;
+
+  }
+
+  .bottom > div > button{
+    transition:.75s;
+
+  }
+
+.bottom > div > button:hover{
+    transition:.75s;
+    background-color:rgb(177, 177, 177);
+  }
+
+    
+    main {
+      margin-bottom:150px;
+
+    }
+    
+    .searchbar{
+     position:relative;
+     left:100px;
+     width:0px;
+    
+    }
+    
+    #recipebox{
+      border-style:solid;
+      border-radius:5px;
+      border-color: lightgrey;
+      margin-left:50px;
+      margin-right:50px;
+      margin-top:10px;
+      position:relative;
+      height:650px;
+      overflow:auto;
+      display:grid;
+      grid-template-columns: 1fr; /*removed 1fr */
+
+    }
+    
+    @media only screen and (max-width: 991px) {
+    
+      #recipebox{
+        grid-template-columns: 1fr 1fr; /*removed 1fr */
+  
+      }
+
+    }
+
+    @media only screen and (max-width: 700px) {
+    
+      #recipebox{
+        grid-template-columns: 1fr; /*removed 1fr */
+  
+      }
+
+    }
+
+    #recipe {
+      text-decoration: none;
+    }
+    
+    #recipe-holder {
+      padding: 5px 5px 5px 5px;
+      margin-left:50px;
+    }
+    
+    #recipe:hover {
+      box-shadow: 3px 3px 10px 0px #000000;
+      color: black;
+    }
+    
+    #recipe p {
+      margin: 0;
+    }
+    #recipe-image {
+      height: 250px;
+      width: 250px;
+    }
+}

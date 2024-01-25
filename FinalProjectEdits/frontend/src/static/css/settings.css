@@ -1,0 +1,56 @@
+.sidebar {
+    height: 100%; 
+    width: 200px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    float:left;
+  }
+  
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+  }
+
+.sidebar a:hover {
+    color: #f1f1f1;
+  }
+
+main {
+    margin-left: 200px;
+  }
+
+#account-info {
+    border: 1px solid #111;
+    display:flex;
+  }
+
+#profile-photo {
+    height: 200px;
+    width: 200px;
+  }
+
+#account-top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+#setting-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+#setting-buttons button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

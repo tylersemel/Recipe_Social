@@ -1,0 +1,305 @@
+/** @author: Tyler Semel (tlsemel */
+@media only screen and (min-width: 992px) {
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        font-family: "Lucida Console", sans-serif;
+        font-weight: normal;
+        font-size: 15px;
+        overflow-x: hidden
+    }
+
+    html {
+        margin: 0;
+        padding: relative;
+        height: 100%;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        max-height: 100vh;
+        background-color:#fffafa;
+    }
+
+    .side-button {
+        font-size: 1.5vw;
+        align-items: center;
+        background-color: #fffafa;
+        border: 0.3vw solid black;
+        border-radius: 1vw;
+        box-sizing: border-box;
+        color: black;
+        cursor: pointer;
+        justify-content: center;
+        line-height: 1;
+        padding: 0.4vw;
+        padding-left: 0.7vw;
+        padding-right: 0.7vw;
+    }
+
+
+    .bottom-sidebar-flex-column {
+        position: fixed;
+        /* height: 100%;  */
+        width: 20%;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        /* overflow-x: hidden; */
+        display: flex;
+        float: left;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: stretch; */
+        padding: 2%;  
+    }
+
+    .bottom-sidebar-flex-column > div {
+        /* padding-top: 55%; */
+        /*padding-block: 20%;*/ 
+        margin-top:18%;
+    }
+
+    .bottom-sidebar-flex-column > div > button{
+        transition:.75s;
+
+    }
+
+    .bottom-sidebar-flex-column > div > button:hover{
+        transition:.75s;
+        background-color:rgb(177, 177, 177);
+    }
+
+    .header {
+        margin-top: 20px;
+        font-size: 24px;
+        grid-row: 1;
+        grid-column: 2/3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .create-recipe-form {
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color:#fffafa;
+        border: 3px solid black;
+        margin-left: 20%;
+        margin-right: 10%;
+        border-radius:5px;
+    }
+
+    .ing {
+        margin-bottom: 1em;
+    }
+
+    .placeholder {
+        visibility: hidden;
+        display:none;
+    }
+
+    #preview{
+        border-style:solid;
+        height:250px;
+        width:250px;
+        margin-bottom:10px;
+    }
+
+    .ing-name{
+        width:160px;
+    }
+
+    .ing-amount{
+        width:160px;
+    }
+
+    .ing-measurement{
+        width:160px;
+    }
+
+    .create-recipe-submit{
+        background-color:#787678;
+        color:white;
+        border-radius:5px;
+        padding-top:5px;
+        padding-bottom:5px;
+        padding-left: 5px;
+        padding-right:5px;
+        border-style:none;
+        margin-top:10px;
+    }
+
+
+    .btn{
+        background-color:#787678;
+        color:white;
+        border-radius:5px;
+        padding-top:5px;
+        padding-bottom:5px;
+        padding-left: 5px;
+        padding-right:5px;
+        border-style:none;
+        margin-bottom:10px;
+    }
+
+}
+
+@media only screen and (max-width: 991px) {
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        font-family: "Lucida Console", sans-serif;
+        font-weight: normal;
+        font-size: 15px;
+        overflow-x: hidden
+    }
+
+    html {
+        margin: 0;
+        padding: relative;
+        height: 100%;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        max-height: 100vh;
+        background-color:#fffafa;
+    }
+
+    .side-button {
+        font-size: 1.9vw;
+        align-items: center;
+        background-color: #fffafa;
+        border: 0.3vw solid black;
+        border-radius: 1vw;
+        box-sizing: border-box;
+        color: black;
+        cursor: pointer;
+        justify-content: center;
+        line-height: 1;
+        padding: 0.4vw;
+        padding-left: 0.5vw;
+        padding-right: 0.5vw;
+        padding-top:10px;
+        padding-bottom:10px;
+
+    }
+
+    .header {
+        margin-top: 20px;
+        font-size: 24px;
+        grid-row: 1;
+        grid-column: 2/3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .create-recipe-form {
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color:#fffafa;
+        border: 3px solid black;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius:5px;
+        margin-bottom:20%;
+    }
+
+    .ing {
+        margin-bottom: 1em;
+    }
+
+    .placeholder {
+        visibility: hidden;
+        display:none;
+    }
+
+    #preview{
+        border-style:solid;
+        height:240px;
+        width:240px;
+        margin-bottom:10px;
+    }
+
+    .bottom-sidebar-flex-column {
+        height: 100px; /* Full-height: remove this if you want "auto" height */
+        width: 100%; /* Set the width of the sidebar */
+        /* overflow-x: hidden; */
+        position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+        bottom: 0; /* Stay at the top */
+        left: 0;
+        text-align:center;
+       
+        
+      }
+      
+      .bottom-sidebar-flex-column > div {
+        /* padding-top: 55%; */
+        /*padding-block: 20%;*/
+        
+        display: inline-block;
+        width:18%;
+        margin-top:25px;
+      }
+
+    .bottom-sidebar-flex-column > div > button{
+        transition:.75s;
+        
+
+    }
+
+    .bottom-sidebar-flex-column > div > button:hover{
+        transition:.75s;
+        background-color:rgb(177, 177, 177);
+    }
+
+    .row > div{
+        padding-top:10px;
+    }
+
+    .create-recipe-submit{
+        background-color:#787678;
+        color:white;
+        border-radius:5px;
+        padding-top:5px;
+        padding-bottom:5px;
+        padding-left: 5px;
+        padding-right:5px;
+        border-style:none;
+        margin-top:10px;
+    }
+
+    .create-recipe-submit:hover{
+        transition: .25s;
+        background-color:#736f83;
+    }
+
+    .ing-name{
+        width:97px;
+    }
+
+    .ing-amount{
+        width:95px;
+    }
+
+    .ing-measurement{
+        width:95px;
+    }
+
+    .btn{
+        background-color:#787678;
+        color:white;
+        border-radius:5px;
+        padding-top:5px;
+        padding-bottom:5px;
+        padding-left: 5px;
+        padding-right:5px;
+        border-style:none;
+    }
+}

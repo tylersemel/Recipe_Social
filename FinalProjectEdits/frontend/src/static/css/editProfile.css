@@ -1,0 +1,344 @@
+/** @author: Tyler Semel (tlsemel */
+@media only screen and (min-width: 992px) {
+    
+    * {
+        box-sizing: border-box; 
+        padding: 0;
+        font-family: "Lucida Console", sans-serif;
+        font-weight: normal;
+        font-size: 2vw;
+      }
+      
+      html {
+        margin: 0;
+        padding: relative;
+      }
+
+      button {
+        font-size: 1.7vw;
+        align-items: center;
+        background-color: #fffafa;
+        border: 0.3vw solid black;
+        border-radius: 1vw;
+        box-sizing: border-box;
+        color: black;
+        cursor: pointer;
+        justify-content: center;
+        line-height: 1;
+        padding: 0.4vw;
+        padding-left: 0.7vw;
+        padding-right: 0.7vw;
+      }
+
+    body {
+        margin: 0;
+        /* max-width: 100%; */
+        max-height: 100%;
+        background-color:#fffafa;
+        /* display: grid; */
+        /* grid-template-columns: 0.5fr 2fr; */
+        /* grid-template-rows: 1fr; */
+        /* display: flex; */
+        /* flex-direction: row; */
+        padding: 2%;
+        background-color:#f1f1f1;
+      }
+    
+    .bottom {
+        /* position: fixed; */
+        /* height: 100%;  */
+        /* width: 55%;  */
+        top: 0;
+        left: 0;
+        height: 90vh;
+        /* overflow-x: hidden; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: stretch; */
+        float:left;
+        padding: 2%;
+       
+        
+      }
+      
+      .bottom > div {
+        /* padding-top: 55%; */
+        /*padding-block: 20%;*/
+        margin-bottom:25%;
+        margin:19%;
+      }
+
+
+    .edit-profile-form{
+        background-color:white;
+        border-style:solid;
+        border-width: 5px;
+        border-radius:10px;
+        padding:20px;
+    }
+
+    .bio{
+        margin-top:10px;
+        resize:none;
+    }
+
+    form {
+        display:grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap:10px;
+        grid-auto-rows: 100px;
+        grid-template-areas: 
+        "a a b b b b"
+        "a a c c c c"
+        "e e e e e e"
+        "d d d d d d"; 
+        align-items: start;
+        font-size:20px;
+    }
+
+    .sender-image {
+        border-style:solid;
+        height:250px;
+        width:250px;
+        border-width: 2px;
+        border-color:grey;
+        border-radius:2px;
+    }
+
+    .avatar{
+        font-size:15px;
+        margin-right:25px; 
+    }
+
+    .profile-photo{
+        grid-area: a;
+    }
+
+    .user-name{
+        grid-area: b;
+    }
+
+    .user-bio{
+        grid-area: c;
+    }
+
+    .edit-button{
+        grid-area: d;
+        background-color:white;
+        transition:.75s;
+        border-radius:8px;
+        padding-top:15px;
+        padding-bottom:15px;
+        margin-right:20%;
+        margin-left:20%;
+        width:60%;
+
+    }
+
+    .edit-button hidden{
+        grid-area: d;
+        background-color:white;
+        transition:.75s;
+        border-radius:8px;
+        padding-top:15px;
+        padding-bottom:15px;
+    }
+
+    .edit-button:hover{
+        background-color:gray;
+        transition:.75s;
+    }
+
+    #successbox{
+        grid-area:e;
+        height:200px;
+        width:1000px;
+        margin-top:300px;
+    }
+
+    .bottom > div > button{
+        transition:.75s;
+
+    }
+
+    .bottom > div > button:hover{
+        transition:.75s;
+        background-color:rgb(177, 177, 177);
+    }
+
+}
+
+@media only screen and (max-width: 991px) {
+
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        font-family: "Lucida Console", sans-serif;
+        font-weight: normal;
+        font-size: 2vw;
+      }
+      
+      html {
+        margin: 0;
+        padding: relative;
+      }
+
+      button {
+        font-size: 1.7vw;
+        align-items: center;
+        background-color: #fffafa;
+        border: 0.3vw solid black;
+        border-radius: 1vw;
+        box-sizing: border-box;
+        color: black;
+        cursor: pointer;
+        justify-content: center;
+        line-height: 1;
+        padding:10px;
+        
+      }
+
+    body {
+        margin: 0;
+        /* max-width: 100%; */
+        max-height: 100%;
+        background-color:#fffafa;
+        /* display: grid; */
+        /* display: flex; */
+        /* flex-direction: row; */
+        padding: 2%;
+        background-color:#f1f1f1;
+      }
+    
+    .bottom {
+        height: 100px; /* Full-height: remove this if you want "auto" height */
+        width: 100%; /* Set the width of the sidebar */
+        /* overflow-x: hidden; */
+        position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+        bottom: 0; /* Stay at the top */
+        left: 0;
+        text-align:center;
+       
+        
+      }
+      
+      .bottom > div {
+        /* padding-top: 55%; */
+        /*padding-block: 20%;*/
+        
+        display: inline-block;
+        width:19%;
+        font-size:15px;
+
+      }
+
+      .bottom > div > button{
+        transition:.75s;
+
+    }
+
+    .bottom > div > button:hover{
+        transition:.75s;
+        background-color:rgb(177, 177, 177);
+    }
+
+
+    .edit-profile-form{
+        background-color:white;
+        border-style:solid;
+        border-width: 5px;
+        border-radius:10px;
+        padding:20px;
+    }
+
+    .bio{
+        margin-top:10px;
+        resize:none;
+    }
+
+    form {
+        display:grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap:10px;
+        grid-auto-rows: 100px;
+        grid-template-areas: 
+        "a a a b b b"
+        "a a a c c c"
+        "e e e e e e"
+        "d d d d d d";
+        align-items: start;
+        font-size:20px;
+    }
+
+    .sender-image {
+        border-style:solid;
+        height:250px;
+        width:250px;
+        border-width: 2px;
+        border-color:grey;
+        border-radius:2px;
+        margin-right:15px;
+    }
+
+    .avatar{
+        font-size:15px;
+        margin-right:25px;
+    }
+
+    .profile-photo{
+        grid-area: a;
+    }
+
+    .user-name{
+        grid-area: b;
+        margin-left:40px;
+    }
+
+    .user-bio{
+        grid-area: c;
+        margin-left:40px;
+    }
+
+    .edit-button{
+        grid-area: d;
+        background-color:white;
+        transition:.75s;
+        border-radius:8px;
+        padding-top:15px;
+        padding-bottom:15px;
+    }
+
+    .edit-button:hover{
+        background-color:gray;
+        transition:.75s;
+    }
+
+    #successbox{
+        grid-area:e;
+        height:100px;
+        margin-top:250px;
+        text-align:center;
+        width:80%;
+        font-size:15px;
+        margin-left:10%;
+    }
+
+    /**
+    button {
+        font-size: 1.7vw;
+        align-items: center;
+        background-color: #fffafa;
+        border: 0.3vw solid black;
+        border-radius: 1vw;
+        box-sizing: border-box;
+        color: black;
+        cursor: pointer;
+        justify-content: center;
+        line-height: 1;
+        padding: 0.4vw;
+        padding-left: 0.7vw;
+        padding-right: 0.7vw;
+      }
+    */
+}

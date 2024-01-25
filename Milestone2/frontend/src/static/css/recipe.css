@@ -1,0 +1,320 @@
+/* Desktop styles */
+@media only screen and (min-width: 992px) {
+
+  body{
+    background-color:#f1f1f1;
+  }
+  .sidebar {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 200px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 200px;
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    float:left;
+  }
+
+  /* The navigation menu links */
+  .sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+  }
+
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+
+  main {
+    margin-left: 200px;
+  }
+
+  .recipename{
+    text-align:center;
+    border-bottom:2px solid lightgray;
+    margin-left:100px;
+    margin-right:100px;
+  }
+
+  .recipeDetails{
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap:10px;
+    grid-auto-rows: 100px;
+    grid-template-areas: 
+      "e f f f f f"
+      "a a a a b b"
+      "a a a a c c"
+      "a a a a c c"
+      "d d d d d d"
+      "d d d d d d";
+    align-items: start;
+    font-size:20px;
+  }
+
+  .image{
+    
+    grid-area: e;
+    padding:0px;
+    margin-top:25px;
+    margin-left:100px;
+    border-style: solid ;
+    border-color: lightgrey;
+    height:170px;
+    width:170px;
+    border-width:2px;
+    background-color:white;
+  }
+
+  .description{
+   padding:25px;
+   grid-area: f;
+   margin-top:25px;
+   border-style:solid;
+   border-color:lightgrey;
+   height:120px;
+   left:100px;
+   background-color:white;
+   border-width:2px;
+   margin-right:100px;
+   overflow:auto;
+  }
+
+  .ingredients{
+    grid-area: a;
+    padding:25px;
+    border-style:solid;
+    border-color:lightgray;
+    margin-top:100px;
+    margin-left:100px;
+    margin-right:25px;
+    height:250px;
+    background-color:white;
+    border-width:2px;
+    overflow:auto;
+
+  }
+
+  .time{
+    grid-area: b;
+    padding:25px;
+    height:45px;
+    border-style:solid;
+    border-color:lightgray;
+    margin-top:100px;
+    margin-right:100px;
+    background-color:white;
+    border-width:2px;
+  }
+
+  .dietaryrestrictions{
+    grid-area: c;
+    padding-top:25px;
+    padding-left:25px;
+    height:165px;
+    border-style:solid;
+    border-color:lightgray;
+    margin-top:100px;
+    margin-right:100px;
+    background-color:white;
+    border-width:2px;
+    overflow:auto;
+  }
+
+  .instructions{
+    grid-area: d;
+    border-style:solid;
+    border-color:lightgray;
+    margin-left:100px;
+    margin-right:100px;
+    margin-top:85px;
+    height:475px;
+    padding:25px;
+    background-color:white;
+    border-width:2px;
+    overflow:auto;
+  }
+
+  ul li {
+    list-style: none;
+    padding-top:5px;
+    padding-bottom:5px;
+  }
+
+  ul li::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 0;
+  }
+}
+
+/* Styles for screens with a maximum width of 991px */
+@media only screen and (max-width: 991px) {
+  
+  body{
+    background-color:#f1f1f1;
+  }
+  .sidebar {
+    
+    height: 100px; /* Full-height: remove this if you want "auto" height */
+    width: 100%; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    bottom: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111;/* Black */
+    overflow-y: hidden; /* Disable horizontal scroll */
+    /*padding-top: 200px;
+    padding-bottom: 200px; */
+
+    text-align:center;
+  }
+
+  /* The navigation menu links */
+  .sidebar a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: inline-block;
+    width:24%;
+    padding-top:35px;
+  }
+
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+
+  main {
+    /*margin-left: 200px; */
+    margin-bottom:150px;
+  }
+
+  .recipename{
+    text-align:center;
+    border-bottom:2px solid lightgray;
+    margin-left:100px;
+    margin-right:100px;
+  }
+
+  .recipeDetails{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:10px;
+    grid-auto-rows: 100px;
+    grid-template-areas: 
+      "e f f f"
+      "a a a a"
+      "b c c c"
+      "d d d d"
+      "d d d d";
+    align-items: start;
+    font-size:20px;
+  }
+
+  .image{
+    
+    grid-area: e;
+    padding:0px;
+    margin-top:25px;
+    margin-left:50px;
+    border-style: solid ;
+    border-color: lightgrey;
+    height:150px;
+    width:150px;
+    border-width:2px;
+    background-color:white;
+  }
+
+  .description{
+   padding:25px;
+   grid-area: f;
+   margin-top:25px;
+   border-style:solid;
+   border-color:lightgrey;
+   height:100px;
+   left:100px;
+   background-color:white;
+   border-width:2px;
+   margin-right:50px;
+   overflow:auto;
+  }
+
+  .ingredients{
+    grid-area: a;
+    padding:25px;
+    border-style:solid;
+    border-color:lightgray;
+    margin-top:85px;
+    margin-left:50px;
+    margin-right:50px;
+    height:140px;
+    background-color:white;
+    border-width:2px;
+    overflow:auto;
+
+  }
+
+  .time{
+    grid-area: b;
+    padding:25px;
+    height:100px;
+    width:125px;
+    border-style:solid;
+    border-color:lightgray;
+    margin-top:185px;
+    margin-left:50px;
+    margin-right:10px;
+    background-color:white;
+    border-width:2px;
+  }
+
+  .dietaryrestrictions{
+    grid-area: c;
+    padding:25px;
+    height:100px;
+    border-style:solid;
+    border-color:lightgray;
+    margin-top:185px;
+    margin-right:50px;
+    background-color:white;
+    border-width:2px;
+    overflow:auto;
+  }
+
+  .instructions{
+    grid-area: d;
+    border-style:solid;
+    border-color:lightgray;
+    margin-top:250px;
+    margin-left:50px;
+    margin-right:50px;
+    height:120px;
+    padding:25px;
+    background-color:white;
+    border-width:2px;
+    overflow:auto;
+    padding-bottom:150px;
+  }
+
+  ul li {
+    list-style: none;
+    padding-top:5px;
+    padding-bottom:5px;
+  }
+
+  ul li::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 0;
+  }
+
+
+}

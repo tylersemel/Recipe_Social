@@ -1,0 +1,77 @@
+{
+    "recipes": [
+        {
+            
+            "id": 1,
+            "recipename": "Spaghetti Bolognese",
+            "instructions": "Classic Italian dish with meat sauce",
+            "dietaryrestrictions": "none",
+            "numberofingredients": "6",
+            "ingredients": [
+                {
+                    "name": "Spaghetti",
+                    "quantity": "1 pound"
+                },
+                {
+                    "name": "Ground beef",
+                    "quantity": "1 pound"
+                },
+                {
+                    "name": "Tomato sauce",
+                    "quantity": "28 ounces"
+                },
+                {
+                    "name": "Garlic",
+                    "quantity": "2 cloves"
+                },
+                {
+                    "name": "Onion",
+                    "quantity": "1 medium"
+                },
+                {
+                    "name": "Olive oil",
+                    "quantity": "2 tablespoons"
+                }
+            ]
+            
+            
+        },
+        {
+            
+            "id": 2,
+            "recipename": "Tera Miss You",
+            "instructions": "Classic Italian dish with meat sauce",
+            "dietaryrestrictions": "none",
+            "numberofingredients": "6",
+            "ingredients": [
+                {
+                    "name": "Spaghetti",
+                    "quantity": "1 pound"
+                },
+                {
+                    "name": "Ground beef",
+                    "quantity": "1 pound"
+                },
+                {
+                    "name": "Tomato sauce",
+                    "quantity": "28 ounces"
+                },
+                {
+                    "name": "Garlic",
+                    "quantity": "2 cloves"
+                },
+                {
+                    "name": "Onion",
+                    "quantity": "1 medium"
+                },
+                {
+                    "name": "Olive oil",
+                    "quantity": "2 tablespoons"
+                }
+            ]
+            
+            
+        }
+    ]
+    
+}

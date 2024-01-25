@@ -1,0 +1,24 @@
+{
+    "name": "Recipe Creator",
+    "short_name": "RCP CTR",
+    "scope": "/",
+    "start_url": "/",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/img/icon-196x196.png",
+            "sizes": "196x196",
+            "type": "image/png"
+          },
+          {
+            "src": "/img/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+          },
+          {
+            "src": "/img/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+          }
+    ]
+  }
